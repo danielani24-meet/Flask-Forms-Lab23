@@ -34,7 +34,7 @@ def home():
 
 @app.route('/friend_exists/<string:name>')
 def checkingFriend(name):
-	return render_template('friend_exists.html', n = name)
+	return render_template('friend_exists.html', n = name, facebook_friends = facebook_friends)
 
 
   	
